@@ -152,7 +152,7 @@ jobs:
 
       - name: Use the node_modules cache if available [npm]
         if: steps.package_manager.outputs.name == 'npm'
-        uses: actions/cache@v
+        uses: actions/cache@v4
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ steps.versions.outputs.node_version }}-${{ hashFiles('**/package-lock.json') }}
