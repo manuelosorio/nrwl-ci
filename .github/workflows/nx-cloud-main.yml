@@ -310,7 +310,7 @@ jobs:
           ${{ inputs.init-commands }}
 
       - name: Process parallel commands configuration
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         id: parallel_commands_config
         env:
           PARALLEL_COMMANDS: ${{ inputs.parallel-commands }}
